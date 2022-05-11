@@ -1,66 +1,68 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Registering Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HOME</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-        span.psw{
-            float: right;
-        }
-        button:hover{
-            opacity: 0.8;
-        }
-
-    </style>
-
 </head>
 <body>
 <p>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
 </p>
-<form action="emialcalling.php"  method="POST">
-    <div class="container">
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4 " >
-            <button type="submit" name="LOGIN" style="background-color:springgreen;border: #00ffb2;color: white;width: 150px ;margin: 5px 5px 0 5px;padding: 15px">LOGIN</button>
-            <button type="submit" name="registering"  style="background-color:white;border: #00ffb2;color: #00ffb2;width: 150px;margin: 5px 5px 0 5px;padding: 15px">Registering</button>
-            <hr>
+<form action="registerdb.php" method="POST">
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"> </div>
+        <div class="col-md-6">
+            <h1 style="margin-left: 35%">Register</h1>
+            <p style="text-align: center;margin-right: 10px">
+                For far away,behind the word mountains,far from the countries Vokalia and  Consonarnita
+            </p><br>
+            <div class="input-group" >
+                <span class="input-group-addon" ><i class="glyphicon glyphicon-user"></i></span>
+                <input id="email" type="text" class="form-control" name="country" placeholder="Country Name">
+            </div>
+            <br>
             <div class="input-group" >
                 <span class="input-group-addon" ><i class="glyphicon glyphicon-user"></i></span>
                 <input id="email" type="text" class="form-control" name="email" placeholder="Email">
             </div>
             <br>
-            <div class="input-group" >
-                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group" >
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group" >
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="confirm" placeholder="confirm Password">
+                    </div>
+                </div>
             </div>
             <br>
-            <div class="col-md-6 le">
-                <label >
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
-            <div class="col-md-6">
-                <span class="psw" ><a href="#"> forget password?</a></span>
-            </div>
-            <button type="submit" name="submit"  style="border-color:springgreen;color: white; background-color: springgreen;width: 100%;padding: 10px;margin-top: 5px;border-width:0">LOGIN</button>
-        </div>
-    </div>
-</form>
+            <label >
+                <input type="checkbox" checked="checked" name="remember"> I Read and Accept <a href="#">Terms and Conditions</a>
+            </label><br><br>
 
+            <button type="submit" name="submit"      style="background-color: #0a53be;color: white;border-color: #0a53be; border-width: 0;padding: 5px;border-radius: 10%">Submit</button><br>
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+
+
+
+
+</div>
+
+</form>
 </body>
 </html>
